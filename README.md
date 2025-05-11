@@ -21,7 +21,6 @@ A simple and secure **RESTful API** built with **Laravel** for managing contacts
 | --------------- | ------------------------- |
 | Laravel         | PHP framework for backend |
 | MySQL           | Relational database       |
-| Laravel Sanctum | API Authentication        |
 | Postman / cURL  | API testing               |
 | Composer        | Dependency manager        |
 | PHP (8.x)       | Language runtime          |
@@ -43,22 +42,14 @@ cd contact-management-api
 composer install
 ```
 
-### 3. Configure Environment
 
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-> Update the `.env` file with your **database** and **mail** credentials.
-
-### 4. Run Migrations
+### 3. Run Migrations
 
 ```bash
 php artisan migrate
 ```
 
-### 5. Serve the Application
+### 4. Serve the Application
 
 ```bash
 php artisan serve
